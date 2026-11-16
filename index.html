@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hongxi (Jimmy) Chen</title>
+  <meta name="description" content="Computer engineering student at UBC. Research on the reliability of LLM-generated tests; apps for iPhone and Mac.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hongxi (Jimmy) Chen">
+  <meta property="og:description" content="Computer engineering at UBC. Research on LLM-generated tests; apps for iPhone and Mac.">
+  <meta property="og:url" content="https://jimmychan233.github.io/">
+  <meta name="theme-color" content="#FAFBFC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1116" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="teleprompter.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="intro wrap">
+    <h1 class="name">Hongxi (Jimmy) Chen</h1>
+    <p class="voice" data-teleprompter>I study whether tests written by language models can be trusted, and I build apps for iPhone and Mac.</p>
+    <p class="standing">Computer Engineering at the University of British Columbia, finishing in 2027. On exchange at the University of Hong Kong this fall. Open to internships, and applying to master’s programs in computer engineering and computer science.</p>
+    <nav class="links" aria-label="Contact and profiles">
+      <a href="mailto:chenjimmy833@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/hongxi-chen-453358200/">LinkedIn</a>
+      <a href="https://github.com/JimmyChan233">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="block wrap" aria-labelledby="research">
+      <h2 id="research">Research</h2>
+      <div class="entries">
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Reliability of LLM-generated tests</h3>
+            <p class="when">Jan–Aug 2026</p>
+          </div>
+          <p class="meta">ReSeSS Research Lab, UBC. Undergraduate research assistant, supervised by Prof. Julia Rubin.</p>
+          <p>Can test cases and code mutations written by large language models help debug real software? We checked their output against real Java defects from the Defects4J benchmark.</p>
+          <ul>
+            <li>Benchmarked six LLM-powered test-generation tools on 43 real bugs, with five LLM backends, across more than 500 controlled runs.</li>
+            <li>Supported the experimental design and quantitative analysis for a manuscript submitted to ASE 2026.</li>
+            <li>Built a reproducible Python package that runs each tool, collects test coverage and aggregates the results, cutting manual benchmarking work.</li>
+            <li>Made the BugFarm parsing pipeline tolerate ill-formed LLM output, recovering 129 valid methods instead of 111 across four configurations with no extra API calls.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="block wrap" aria-labelledby="projects">
+      <h2 id="projects">Projects</h2>
+      <div class="entries">
+        <article class="entry">
+          <div class="entry-head">
+            <h3 class="with-icon" translate="no"><img src="assets/underlens-icon.png" alt="" width="28" height="28" loading="lazy" decoding="async">Underlens</h3>
+            <p class="when">2026</p>
+          </div>
+          <p class="lede">A teleprompter for Mac that follows your voice.</p>
+          <p>The script moves as you speak, in a small overlay right below the camera. Speech is recognised on the Mac and the app has no network access. Written in Swift; in App Store review now.</p>
+          <p class="actions"><a href="/underlens/">Support page</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3 translate="no">Nest</h3>
+            <p class="when">2026</p>
+          </div>
+          <p class="lede">An iOS 26 mood diary with a drawn companion.</p>
+          <p>HKU ELEC3644, team of three, in progress. Ten-second check-ins, a journal with on-device photo tagging and voice transcription, entries on a map, an anonymous shared sky of moods with moderation, widgets, and English, Simplified and Traditional Chinese.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3 translate="no">Treehole</h3>
+            <p class="when">2025–26</p>
+          </div>
+          <p class="lede">A private journal with a virtual pet and an anonymous social space.</p>
+          <p>Collaborative iOS app in SwiftUI, SwiftData, CloudKit and Supabase. I built the home-screen widget, LLM chat and entry summaries, and the account-deletion flow: cloud data is deleted before local identity is cleared, so a failed network call can be retried safely.</p>
+          <p class="actions"><a href="https://github.com/C-Square04/Treehole">Source on GitHub</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>A&amp;E waiting times in Hong Kong</h3>
+            <p class="when">2026</p>
+          </div>
+          <p class="lede">Forecasting waits at 18 public hospitals, 3 and 24 hours ahead.</p>
+          <p>HKU ELEC3544, team of three. Three hours ahead, gradient boosting reached a mean absolute error of 39.5 minutes on 1–10 November, against 53.2 for the historical mean and 41.2 for a one-line rule. A day ahead, nothing we built beat the rule. The blind test was preregistered before its data existed.</p>
+          <p class="actions"><a href="https://github.com/JimmyChan233/elec3544-ae-waiting-times">Source and report</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3 translate="no">MovieTier</h3>
+            <p class="when">2025</p>
+          </div>
+          <p class="lede">Rank movies by comparing them in pairs, and follow friends’ rankings.</p>
+          <p>UBC CPEN 321, team of four, first place. I led Android and backend work: architecture, data model, REST API, Google sign-in verified on the server, and server-sent events for live feeds. Kotlin, TypeScript, Express, MongoDB.</p>
+          <p class="actions"><a href="https://github.com/JimmyChan233/CPEN321-MovieTier">Source on GitHub</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Polyp segmentation</h3>
+            <p class="when">2026</p>
+          </div>
+          <p class="lede">Finding polyps pixel by pixel in endoscopy images.</p>
+          <p>UBC CPEN 355, team of three. U-Net, Attention U-Net and a pretrained ResNet34 U-Net on Kvasir-SEG, trained with Dice and cross-entropy loss in PyTorch.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3 translate="no">StudySync</h3>
+            <p class="when">2024</p>
+          </div>
+          <p class="lede">An iOS app that quizzes students on their course material.</p>
+          <p>UBC team project, five people, released on the App Store.</p>
+          <p class="actions"><a href="https://github.com/JimmyChan233/druda-studysync">Source on GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block wrap" aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="entries">
+        <article class="entry">
+          <div class="entry-head">
+            <h3>University of British Columbia</h3>
+            <p class="when">2023–2027</p>
+          </div>
+          <p class="meta">BASc in Computer Engineering, Vancouver</p>
+          <p>87.0% cumulative average, top 10% in the Faculty of Applied Science, Dean’s List in 2024–25 and 2025–26.</p>
+          <dl class="grades">
+            <div><dt>Software Engineering</dt><dd>95</dd></div>
+            <div><dt>Operating Systems</dt><dd>95</dd></div>
+            <div><dt>Algorithms and Data Structures</dt><dd>94</dd></div>
+            <div><dt>Digital Systems Design</dt><dd>93</dd></div>
+            <div><dt>Machine Learning</dt><dd>85</dd></div>
+          </dl>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>University of Hong Kong</h3>
+            <p class="when">Sep–Dec 2026</p>
+          </div>
+          <p class="meta">Exchange student in Computer Engineering, Hong Kong</p>
+          <p>Data Science with Foundation Models, and Advanced Mobile Apps Development.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Fudan University</h3>
+            <p class="when">Jul–Aug 2026</p>
+          </div>
+          <p class="meta">International Summer Session, Shanghai. GPA 3.88/4.0.</p>
+          <p>Artificial Intelligence in FinTech (A). LoRA fine-tuning of Llama-3.2-1B for financial sentiment with as few as 800 labelled samples, and classifiers for imbalanced risk prediction on 5,000 bank customer records.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Peking University</h3>
+            <p class="when">Jun–Jul 2025</p>
+          </div>
+          <p class="meta">Globex Julmester Summer Program, Beijing</p>
+          <p>Data-Driven Optimization and Learning. Simulated a queueing system and implemented Robbins–Monro stochastic approximation, using Monte Carlo runs to estimate 90th-percentile waits with 95% confidence intervals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block wrap" aria-labelledby="awards">
+      <h2 id="awards">Awards</h2>
+      <div class="entries">
+        <ul class="plain">
+          <li><span>Cathay Pacific Education Abroad Scholarship</span><span class="when">2026–27</span></li>
+          <li><span>UBC Faculty of Applied Science International Student Scholarship</span><span class="when">2025–26</span></li>
+          <li><span>First place, UBC CPEN 321 project presentation</span><span class="when">2025</span></li>
+          <li><span>Amazon AI &amp; ML Global Youth Camp: DeepRacer first-place team and Best Team Award</span><span class="when">2022</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block wrap" aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+      <div class="entries">
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>Python, Java, Kotlin, TypeScript, Swift, Verilog</dd></div>
+          <div><dt>Research and ML</dt><dd>PyTorch, Defects4J</dd></div>
+          <div><dt>Apps and web</dt><dd>SwiftUI, Jetpack Compose, Node.js, Supabase, Git</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Reach me by <a href="mailto:chenjimmy833@gmail.com">email</a> or on <a href="https://www.linkedin.com/in/hongxi-chen-453358200/">LinkedIn</a>. References available on request.</p>
+    <p class="when">Updated November 2026</p>
+  </footer>
+</body>
+</html>
